@@ -1,0 +1,62 @@
+/* Write your CSS here */
+.expenses-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .expenses-container {
+    flex-direction: column;
+  }
+}
+
+.expense-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 280px;
+  height: 100px;
+  border-radius: 15px;
+  border: solid 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .expense-cards {
+    width: 100%;
+    min-width: 260px;
+    margin-bottom: 15px;
+  }
+}
+
+.balance-card {
+  background-color: #ecfccb;
+  border-color: #84cc16;
+}
+.income-card {
+  background-color: #cffafe;
+  border-color: #06b6d4;
+}
+
+.expenses-card {
+  background-color: #ede9fe;
+  border-color: #7c3aed;
+}
+
+.icon {
+  width: 65px;
+}
+
+.card-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 0px;
+}
+
+.card-balance {
+  font-size: 24px;
+  font-size: 500;
+  margin-top: 10px;
+}

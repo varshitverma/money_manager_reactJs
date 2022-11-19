@@ -1,0 +1,197 @@
+/* Write your CSS here */
+.bg-container {
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+
+.card {
+  width: 68%;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 0px;
+  }
+}
+
+.user-name-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  width: 100%;
+  padding: 18px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-name-container {
+    text-align: center;
+    width: 100%;
+    min-width: 260px;
+  }
+}
+
+.main-heading {
+  font-size: 35px;
+  font-weight: 600;
+  color: #475569;
+}
+
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 25px;
+  }
+}
+
+.desc {
+  color: #475569;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.desc-inner {
+  color: #0b69ff;
+}
+
+@media screen and (max-width: 768px) {
+  .desc {
+    font-size: 14px;
+  }
+}
+
+.transactions-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-container {
+    flex-direction: column;
+  }
+}
+
+.transfer-form {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  padding-right: 43px;
+  padding-left: 48px;
+  width: 40%;
+  max-height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .transfer-form {
+    width: 100%;
+    min-width: 280px;
+    margin-bottom: 12px;
+  }
+}
+
+.heading {
+  font-size: 22px;
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.labels {
+  font-size: 14px;
+  font-weight: bold;
+  color: #7e858e;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #d7dfe9;
+  border-radius: 2px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  align-self: flex-end;
+  padding: 8px 16px 8px 16px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.transactions-history-container {
+  width: 55%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  min-height: 300px;
+  padding: 16px 40px 12px 42px;
+  margin-top: 0px;
+  margin-left: 32px;
+  max-height: 380px;
+  overflow: auto;
+}
+
+.all-transactions {
+  max-height: 260px;
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-history-container {
+    width: 100%;
+    min-width: 280px;
+    margin-left: 0px;
+    padding: 15px 24px 15px 24px;
+  }
+}
+
+.transactions-table-container {
+  height: 100%;
+  border-radius: 8px;
+  max-height: 260px;
+}
+
+.table-column-names {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.transaction-column-names {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 50px;
+}
+
+.column-names {
+  color: #334155;
+  font-size: 16px;
+  font-weight: bold;
+  border-right: none;
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .column-names {
+    width: 40%;
+  }
+}
